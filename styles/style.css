@@ -2,8 +2,8 @@
   display: grid;
   min-width: 100%;
   grid-template-columns: 1fr min-content 1fr;
-  align-items: center;
   padding: 92px 50px 96px;
+  align-items: center;
   min-height: 293px;
 
 }
