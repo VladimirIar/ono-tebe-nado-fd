@@ -4,7 +4,7 @@
   grid-template-columns: 1fr min-content 1fr;
   padding: 92px 50px 96px;
   align-items: center;
-  min-height: 293px;
+
 
 }
 
@@ -71,6 +71,7 @@
   background-size: cover;
   background-position: -135px;
   padding: 165px 50px 50px;
+  background-repeat: no-repeat
 }
 
 .overlay {
@@ -90,7 +91,6 @@
 }
 
 .aligned-text {
-  max-height: 385px;
   color: #fff;
   text-transform: uppercase;
   font-weight: bold;
@@ -159,8 +159,9 @@
   display: flex;
   width: 100%;
   gap: 25px;
-  max-height: 596px;
   list-style: none;
+  /*перенос карточке на новую строку*/
+  flex-wrap: wrap;
 }
 
 .lots__card-list-item {
@@ -180,24 +181,20 @@
   position: relative;
   justify-content: space-between;
   height: 100%;
-}
-
-.card_type_film {
-  background-image: url(../images/card-lot-01.jpg);
   background-size: cover;
   background-position: -125px
+}
+/*повторяющиеся стили перемещенны в класс card*/
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-size: cover;
-  background-position: -125px
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-size: cover;
-  background-position: -125px
 }
 
 .card__title {
@@ -231,7 +228,6 @@
 
 .about {
   display: grid;
-  height: 595px;
   grid-template-columns: 359px 1fr;
   margin-bottom: 10px;
   padding: 0px 24px;
@@ -239,7 +235,7 @@
 
 
 .about__logo {
-  margin-left: 40px;
+  margin-left: 49.5px;
   display: flex;
   width: 240px;
   height: 240px;
@@ -248,7 +244,7 @@
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  margin-top: 35px;
+  margin-top: 33px;
 }
 
 .about__logo-image {
@@ -260,7 +256,7 @@
   font-weight: bold;
   font-size: 40px;
   text-transform: uppercase;
-  padding: 136px 0px 100px;
+  padding: 136px  0px 100px;
 }
 
 .about__text {
@@ -271,6 +267,7 @@
   line-height: 24px;
   font-style: normal;
   gap: 24px;
+  max-width: 687px;
 }
 
 .footer {
@@ -297,6 +294,7 @@
   font-size: 18px;
   font-weight: normal;
   text-underline-offset: 16%;
+  line-height: 120%;
 }
 
 .footer__social-list {

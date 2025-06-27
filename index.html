@@ -32,20 +32,22 @@
           alt="логотип Оно тебе надо"
         >
       </a>
+      <!--Одинаковые стили для header и footer 
+      в повторяющихся элементах-->
       <address class="address header__address">
         <a
-          class="header__address-phone header__link"
+          class="address-phone header__link"
           href="tel:+99995555555"
         >
           +9 999 555 5555
         </a>
         <a
-          class="header__address-mail header__link"
+          class="address-mail header__link"
           href="mailto:info@sobaka.ge"
         >
           info@sobaka.ge</a
         >
-        <p class="header__address-street">
+        <p class="address-street">
           наб. Принсенграхт 263- 265, Амстердам
         </p>
       </address>
@@ -66,19 +68,19 @@
           <p class="cover__description-text">
             Аукцион вещей, в которые никто не верил
           </p>
-          <button class="bet-button">Сделать ставку</button>
+          <button class="bet-button" type="button">Сделать ставку</button>
         </div>
       </section>
       <section class="lots">
-        <h3 class="lots__heading">Лоты</h3>
+        <h2 class="lots__heading">Лоты</h2>
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
             <a class="card-link" href="#0">
               <article class="card card_type_film">
                 <div class="overlay"></div>
-                <h4 class="card__title">
+                <h3 class="card__title">
                   Фильм режиссёра, который бросил киношколу
-                </h4>
+                </h3>
                 <p class="card__text">
                   Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                   ставка, если бы вы не знали, что режиссёр — Пол Томас
@@ -91,9 +93,9 @@
             <a class="card-link" href="#0">
               <article class="card card_type_book">
                 <div class="overlay"></div>
-                <h4 class="card__title">
+                <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
-                </h4>
+                </h3>
                 <p class="card__text">
                   Объёмом почти в тысячу страниц. Иногда без знаков препинания и
                   с переходами на древнеанглийский. В ней одновременно
@@ -109,9 +111,9 @@
             <a class="card-link" href="#0">
               <article class="card card_type_picture">
                 <div class="overlay"></div>
-                <h4 class="card__title">
+                <h3 class="card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
-                </h4>
+                </h3>
                 <p class="card__text">
                   Ну действительно, там линия, тут кружочек, а здесь и вовсе
                   что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
@@ -135,7 +137,7 @@
           </div>
         </div>
         <div class="about__column">
-          <h3 class="about__title">Об аукционе</h3>
+          <h2 class="about__title">Об аукционе</h2>
           <div class="about__text">
             <p>
               Здесь вы не встретите очередное пафосное собрание невероятно
@@ -159,13 +161,13 @@
     </main>
     <footer class="footer">
       <address class="address footer__address">
-        <a class="footer__address-phone" href="tel:+99995555555">
+        <a class="address-phone" href="tel:+99995555555">
           +9 999 555 5555
         </a>
-        <a class="header__address-mail" href="mailto:info@sobaka.ge">
+        <a class="address-mail" href="mailto:info@sobaka.ge">
           info@sobaka.ge</a
         >
-        <p class="header__address-street">
+        <p class="address-street">
           наб. Принсенграхт 263- 265, Амстердам
         </p>
       </address>
@@ -184,7 +186,8 @@
       </nav>
       <ul class="footer__social-list">
         <li class="footer__social-list-item">
-          <a class="footer__social-link">
+          <!--добавленны атрибуты href ссылкам на соц.сети-->
+          <a class="footer__social-link" href="#0">
             <img
               class="footer__social-icon"
               src="./images/yt.svg"
@@ -193,7 +196,7 @@
           </a>
         </li>
         <li class="footer__social-list-item">
-          <a class="footer__social-link">
+          <a class="footer__social-link" href="#0">
             <img
               class="footer__social-icon"
               src="./images/vk.svg"
@@ -202,7 +205,7 @@
           </a>
         </li>
         <li class="footer__social-list-item">
-          <a class="footer__social-link">
+          <a class="footer__social-link" href="#0">
             <img
               class="footer__social-icon"
               src="./images/pinterest.svg"
